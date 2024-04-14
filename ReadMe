@@ -1,0 +1,17 @@
+Overview:
+    The reader writer problem is a classical synchronization problem in 
+    computer science. This problem arises when you have multiple threads 
+    reading and writing to a shared resource, typically one thread will
+    be designated a writer and the rest readers. This is done because 
+    the only time race conditions occur when data is mutated. Which is
+    also why mutability, functional languages, control flow concepts 
+    where created. 
+
+Description:
+    This project is my take on the reader writers problem in c++
+    that uses template and interface to generalize the problem.
+    This allows us to manage shared resources of any type that implements 
+    ISharedResources. In this example I chose to demonstrate the problem with a binary where n readers will be reading from the tree and a writer will be 
+    adding nodes. 
+
+GitHub Link: https://github.com/propertyofandy/readers-writers
